@@ -1,0 +1,16 @@
+<h1>NUMBER OF WORDS = {{count}} </h1>
+
+
+<h1><a href="{% url 'home' %}">Start again</a></h1>
+
+<h1>Your text : {{fulltext}} </h1>  
+
+<h1>Words count </h1>  
+
+{% for word, totcount in sworddico %}
+
+</br>
+{{word}} - {{totcount}}
+{% endfor%}
+
+
